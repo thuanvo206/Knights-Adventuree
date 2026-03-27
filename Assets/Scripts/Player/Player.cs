@@ -4,7 +4,7 @@ using TMPro;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
-    internal Rigidbody2D body2D;
+    public Rigidbody2D body2D;
     public float knockBackForce = 15000;
 
     BoxCollider2D box2D;
@@ -22,8 +22,8 @@ public class Player : MonoBehaviour
     [Range(500, 1000)]
     public float doubleJumpPower = 600;
 
-    internal bool canDoubleJump;
-    internal bool canDamage;
+    public bool canDoubleJump;
+    public bool canDamage;
 
     // Player Scale
     bool facingRight = true;
@@ -41,18 +41,18 @@ public class Player : MonoBehaviour
     Animator playerAnimController;
 
     // Player Health
-    internal int maxPlayerHealth = 100;
+    public int maxPlayerHealth = 100;
     public int currentPlayerHealth;
-    internal bool isHurt;
-    internal bool addHealth;
-    internal bool earnCoin;
+    public bool isHurt;
+    public bool addHealth;
+    public bool earnCoin;
     GiveDamage giveDamage;
     GiveHealth giveHealth;
 
     public int currentCoin = 0;
     AddCoin addCoin;
 
-    internal bool isDead;
+    public bool isDead;
     public float deadForce = 5;
 
     TextMeshProUGUI coinText;

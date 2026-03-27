@@ -1,6 +1,7 @@
 ﻿<Solution>
-  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="game.csproj" />
   <Project Path="LeanLocalization.csproj" />
   <Project Path="LeanCommon.csproj" />
+  <Project Path="Tests.csproj" />
   <Project Path="LeanLocalizationEditor.csproj" />
 </Solution>
